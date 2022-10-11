@@ -7,8 +7,14 @@
     Hi {{ person }}! I think you're {{ compliment }}!
     <form action="/game">
       <label for="play-game">Would you like to play a game?</label>
-      <input id="play-game" type="radio" value="yes">Yes
-      <input id="play-game" type="radio" value="no">No
+      <input id="play-game" type="radio" name="play_game" value="yes">Yes
+      <input 
+        id="play-game" 
+        type="radio" 
+        name="play_game" 
+        value="no"
+      >No
+      <input type="submit" value="Submit">
     </form>
 </body>
 </html>
