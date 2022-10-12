@@ -59,8 +59,10 @@ def show_madlib():
     """Show user madlib output"""
     name = request.args.get("name")
     color = request.args.get("color")
+    noun = request.args.get("noun")
+    adjective = request.args.get("adjective")
 
-    return render_template("madlib.html", name=name, color=color)
+    return render_template("madlib.html", name=name, color=color, noun=noun, adjective=adjective)
     
 @app.route("/greet")
 def greet_person():
